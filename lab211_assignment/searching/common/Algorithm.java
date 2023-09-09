@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Algorithm {
 
+    //Thuật toán search bằng linery
     public int linerySearch(int [] arr, int target){
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] == target){
@@ -12,6 +13,9 @@ public class Algorithm {
         }
         return -1;
     }
+
+    //------------------------------
+    //Thuật toán search bằng binary
     public int binarySearch(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
