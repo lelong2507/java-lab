@@ -1,12 +1,10 @@
-
-package common;
+package lab211_assignment.searching.common;
 
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class Library {
-
+   
     public int getInt(String promt, int m, int n) {
         int a = -1;
         Scanner sc = new Scanner(System.in);

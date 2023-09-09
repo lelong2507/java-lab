@@ -1,8 +1,12 @@
-package view;
+package lab211_assignment.searching.view;
 
 
-import common.Library;
+
+
 import java.util.ArrayList;
+import java.util.Scanner;
+
+import lab211_assignment.searching.common.Library;
 
 
 public abstract class Menu<T> {
@@ -23,7 +27,7 @@ public abstract class Menu<T> {
         }
     }
 
-    //-------------------------------------------
+    
     public void display() {
         System.out.println(title);
         System.out.println("--------------------------------");
@@ -32,16 +36,16 @@ public abstract class Menu<T> {
         }
         System.out.println("--------------------------------");
     }
-//-------------------------------------------
+
 
     public int getSelected() {
         display();
         return l.getInt("Enter your choice", 1, mChon.size() + 1);
     }
-//-------------------------------------------
+
 
     public abstract void execute(int n);
-//-------------------------------------------
+
 
     public void run() {
         while (true) {
@@ -53,5 +57,7 @@ public abstract class Menu<T> {
         }
     }
 
+
 }
+
 
