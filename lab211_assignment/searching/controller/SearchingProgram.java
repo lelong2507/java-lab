@@ -39,11 +39,12 @@ public class SearchingProgram extends Menu<String> {
         }
     }
 
-    public void sort(){
+    public void sort() {
         System.out.println("Da lam hom thu 4");
     }
+
     public void search() {
-        final String [] mSearching= { "Liner Searching", "Binary Searching", "Exit" };
+        final String[] mSearching = { "Liner Searching", "Binary Searching", "Exit" };
         class SearchingMenu extends Menu<String> {
             public SearchingMenu() {
                 super("Searching Menu", mSearching);
@@ -68,5 +69,7 @@ public class SearchingProgram extends Menu<String> {
                 }
             }
         }
+        SearchingMenu sm = new SearchingMenu();
+        sm.run();
     }
 }
