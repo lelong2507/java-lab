@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Library {
-   
+   //Hàm nhập số nguyên
     public int getInt(String promt, int m, int n) {
         int a = -1;
         Scanner sc = new Scanner(System.in);
@@ -23,6 +23,7 @@ public class Library {
         return a;
     }
 
+    // Hàm tạo mảng ngẫu nhiên
     public int[] createArray(int size_Array) {
         int[] array = new int[size_Array];
         Random rd = new Random();
@@ -32,6 +33,8 @@ public class Library {
         return array;
     }
 
+
+    // Hàm in ra các mảng
     public void display(int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (i < array.length - 1) {
