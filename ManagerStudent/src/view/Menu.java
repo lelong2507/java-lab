@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package view;
+package ManagerStudent.src.view;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-/**
- *
- * @author longle2507
- */
 public abstract class Menu<T> {
-
     protected String title;
     protected ArrayList<T> mChon;
 
