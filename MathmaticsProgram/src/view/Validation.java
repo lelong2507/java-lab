@@ -11,7 +11,8 @@ import java.util.Scanner;
  * @author longle2507
  */
 public class Validation {
-    //------------------------------- Valid input number
+
+    // ------------------------------- Valid input number
     public boolean isValidNumber(String input) {
         try {
             Double.parseDouble(input);
@@ -21,7 +22,7 @@ public class Validation {
         }
     }
 
-    //------------------------------- Check input number
+    // ------------------------------- Check input number
     public float inputNumber() {
         float number = 0;
         Scanner sc = new Scanner(System.in);
